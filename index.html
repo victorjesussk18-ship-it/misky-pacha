@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MISKY PACHA | Proyecto universitario</title>
+<meta name="description" content="MISKY PACHA — Proyecto universitario de una galleta nutritiva inspirada en los Andes, con arándanos y espirulina.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <nav>
+    <div class="brand">MISKY <span>PACHA</span></div>
+    <a href="#producto">Producto</a>
+    <a href="#proyecto">Proyecto</a>
+    <a href="#esencia">Esencia</a>
+    <a href="#qr">QR</a>
+  </nav>
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">PROYECTO UNIVERSITARIO · GALLETA NUTRITIVA</div>
+      <h1>Cada galleta encierra un <em>secreto ancestral</em> de vitalidad.</h1>
+      <p>MISKY PACHA es una propuesta de producto que combina una identidad inspirada en los Andes con arándanos y espirulina, presentada en un formato artesanal y moderno.</p>
+      <div class="hero-buttons">
+        <a class="button" href="#producto">Conoce el producto</a>
+        <a class="button secondary" href="#proyecto">Ver proyecto</a>
+      </div>
+    </div>
+    <img src="misky-pacha-producto.png" alt="Presentación del producto MISKY PACHA">
+  </div>
+</header>
+
+<main>
+<section id="producto" class="section">
+  <div class="section-title"><span>01</span><h2>Conoce MISKY PACHA</h2></div>
+  <div class="cards">
+    <article><div class="icon">🍃</div><h3>100% natural</h3><p>Una identidad de producto inspirada en ingredientes naturales y una presentación de estilo artesanal.</p></article>
+    <article><div class="icon">🫐</div><h3>Arándanos + espirulina</h3><p>Dos ingredientes protagonistas que forman parte del concepto y la identidad visual de MISKY PACHA.</p></article>
+    <article><div class="icon">⚡</div><h3>Fuente de energía</h3><p>Una propuesta pensada para acompañar diferentes momentos del día dentro del concepto de la marca.</p></article>
+  </div>
+</section>
+
+<section id="proyecto" class="project">
+  <div class="project-inner">
+    <div class="eyebrow light">PRESENTACIÓN ACADÉMICA</div>
+    <h2>Una propuesta de producto con identidad andina</h2>
+    <p>MISKY PACHA busca desarrollar una propuesta diferenciada de galleta, integrando ingredientes destacados, una imagen de marca reconocible y elementos visuales inspirados en la cultura andina.</p>
+    <div class="project-grid">
+      <div><b>Concepto</b><span>Galleta nutritiva con ingredientes naturales.</span></div>
+      <div><b>Ingredientes destacados</b><span>Arándanos y espirulina.</span></div>
+      <div><b>Identidad</b><span>Natural, andina y artesanal.</span></div>
+      <div><b>Presentación</b><span>Empaque de papel kraft con elementos de marca.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="esencia" class="story">
+  <div>
+    <div class="eyebrow light">INSPIRADO EN LOS ANDES</div>
+    <h2>Tradición, naturaleza y sabor.</h2>
+    <p>MISKY PACHA nace como una propuesta que busca unir elementos de inspiración andina con una presentación moderna, atractiva y fácil de reconocer.</p>
+    <p class="quote">“Cada galleta encierra un secreto ancestral de vitalidad”.</p>
+  </div>
+  <div class="seal">MISKY<br><strong>PACHA</strong><small>ARÁNDANOS · ESPIRULINA</small></div>
+</section>
+
+<section class="values section">
+  <div class="section-title"><span>02</span><h2>Lo que representa nuestra marca</h2></div>
+  <div class="value-grid">
+    <div><b>Natural</b><span>Identidad vinculada con la naturaleza.</span></div>
+    <div><b>Andina</b><span>Inspiración en elementos de nuestra cultura.</span></div>
+    <div><b>Artesanal</b><span>Presentación cálida en papel kraft.</span></div>
+    <div><b>Vitalidad</b><span>Concepto asociado al disfrute y energía.</span></div>
+  </div>
+</section>
+
+<section id="qr" class="contact">
+  <div class="eyebrow">ACCESO DIGITAL</div>
+  <h2>Escanea el QR</h2>
+  <p>Este QR se genera automáticamente con la dirección de la página cuando el proyecto sea publicado gratuitamente.</p>
+  <div class="qr-wrap">
+    <div id="qr-code" class="qr-placeholder">QR</div>
+    <div class="qr-text"><strong>MISKY PACHA</strong><br><span id="current-url">Dirección de la página</span></div>
+  </div>
+  <p class="small-note">Al publicar la página en GitHub Pages, el QR mostrará automáticamente la URL pública del proyecto.</p>
+</section>
+</main>
+
+<footer>
+  <div class="brand">MISKY <span>PACHA</span></div>
+  <p>Proyecto universitario · Tradición natural · Inspirado en los Andes</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  const url = window.location.href;
+  document.getElementById('current-url').textContent = url;
+  new QRCode(document.getElementById('qr-code'), {
+    text: url,
+    width: 170,
+    height: 170,
+    correctLevel: QRCode.CorrectLevel.H
+  });
+</script>
+</body>
+</html>
